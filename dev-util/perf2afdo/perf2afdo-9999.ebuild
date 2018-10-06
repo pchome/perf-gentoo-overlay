@@ -23,7 +23,7 @@ fi
 
 LICENSE="Apache-2.0"
 SLOT="0"
-IUSE="lbr libressl llvm elibc_uclibc"
+IUSE="lbr libressl llvm pebs elibc_uclibc"
 
 RESTRICT+=" mirror test"
 
@@ -61,8 +61,8 @@ src_configure() {
     local emesonargs=(
         $(meson_use lbr use_lbr)
         $(meson_use llvm enable_llvm)
+        $(meson_use pebs use_pebs)
         --unity=on
     )
     meson_src_configure
 }
-

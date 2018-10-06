@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>pchome@pchome.local</email>
+		<name>pchome</name>
+	</maintainer>
+	<use>
+		<flag name="lbr">Use Last Branch Record (LBR)</flag>
+		<flag name="llvm">Build afdo profile convert tool for LLVM</flag>
+		<flag name="pebs">Use Processor Event-Based Sampling (PEBS)</flag>
+	</use>
+	<upstream>
+		<remote-id type="github">pchome/perf2afdo</remote-id>
+	</upstream>
+</pkgmetadata>
